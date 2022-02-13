@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pump Your Coin</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+    <script src="javascripts/pixi.min.js"></script>
+    <script src="javascripts/howler.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/game.css"/>
+</head>
+<body>
+
+<div class="menu" id="menu">
+    <div class="banner" id="banner">
+        <div class="scoreBoard" id="scoreBoard">
+            <div style="padding-top: 7px;">
+                <div class="list-nav">
+                    <table class="scroll" cellspacing="5">
+                        <% scores.forEach(function(score){ %>
+                            <tr>
+                                <% if(score.user.id == fId){ %>
+                                    <td><%= score.user.first_name %></td>
+                                    <td data-id="<%= queryId %>"><%= score.score %></td>
+                                <% } else{ %>
+                                        <td><%= score.user.first_name %></td>
+                                        <td data-id=""><%= score.score %></td>
+                                <% } %>
+                            </tr>
+                        <% }) %>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="recent-score" id="score"></div>
+        <div class="score-message" id="message"></div>
+        <div id="info" class="info"></div>
+        <div id="logo" class="logo"></div>
+        <div class="input-content">
+            <div class="inputs">
+                <a class="icoInputMessage">Coin to Pump</a><br>
+                <div class="wrapper">
+                    <input id="icoInput" type="text" class="icoInput" value="ETH" spellcheck="false">
+                    <span class="underline"></span>
+                </div>
+            </div>
+            <button id="start-button" class="start-button" onclick="start()">PUMP 🚀</button>
+        </div>
+
+        <div id="share" class="shareDiv disabled">
+            <a class="shareButton">
+                <div class="button-text">SHARE<br>YOUR<br>SCORE</div>
+                <div class="share-forward"></div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+<div id="game">
+</div>
+
+<script type="text/javascript" src="javascripts/game.js"></script>
+<script type="text/javascript" src="javascripts/audio.js"></script>
+</body>
+</html>

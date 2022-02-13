@@ -1,0 +1,39 @@
+{"frames": {
+
+"rocket_fire2.png":
+{
+	"frame": {"x":1,"y":1,"w":132,"h":344},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":344},
+	"sourceSize": {"w":132,"h":344},
+	"anchor": {"x":0.5,"y":0}
+},
+"rocket_fire1.png":
+{
+	"frame": {"x":1,"y":347,"w":132,"h":341},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":341},
+	"sourceSize": {"w":132,"h":341},
+	"anchor": {"x":0.5,"y":0}
+},
+"rocket_normal.png":
+{
+	"frame": {"x":1,"y":690,"w":132,"h":282},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":282},
+	"sourceSize": {"w":132,"h":282},
+	"anchor": {"x":0.5,"y":0}
+}},
+"animations": {
+},
+"meta": {
+	"version": "1.0",
+	"image": "rocket.png",
+	"format": "RGBA8888",
+	"size": {"w":134,"h":973},
+	"scale": "1"
+}
+}

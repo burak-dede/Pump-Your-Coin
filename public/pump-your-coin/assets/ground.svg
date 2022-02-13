@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="198" height="50" viewBox="0 0 198 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #603813;
+      }
+
+      .cls-2 {
+        fill: #b3b3b3;
+      }
+
+      .cls-3 {
+        fill: #39b54a;
+      }
+    </style>
+  </defs>
+  <title>ground</title>
+  <g id="Layer_2" >
+    <g id="Layer_1-2" >
+      <rect class="cls-1" y="29" width="198" height="21"/>
+      <rect class="cls-2" y="18" width="198" height="21"/>
+      <rect class="cls-3" width="198" height="21"/>
+    </g>
+  </g>
+</svg>
